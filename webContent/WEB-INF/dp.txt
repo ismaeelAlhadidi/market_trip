@@ -1,0 +1,56 @@
+create database market_trip;
+
+use market_trip;
+
+create table users(
+	email varchar(255) PRIMARY KEY,
+	first_name varchar(255),
+	last_name varchar(255),
+	password varchar(255),
+	phone_number char(10),
+	address varchar(255)
+);
+
+create table main_categories(
+	name varchar(255) PRIMARY KEY
+);
+
+create table sub_categories(
+	name varchar(255) PRIMARY KEY,
+	parent_category varchar(255) NOT NULL,
+	FOREIGN KEY (parent_category) REFERENCES main_categories(name)
+);
+
+create table posts(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	content TEXT,
+	image MEDIUMTEXT,
+	sub_category varchar(255),
+	contact_email varchar(255),
+	contact_phone char(10),
+	email varchar(255),
+	price FLOAT(9,2),
+	created timestamp default now()
+);
+
+INSERT INTO main_categories values("Buy & Sell"),("Cars & Vehicles"),("Real Estate"),("Jobs"),("Services"),("Pets");
+
+INSERT INTO sub_categories values("Cars","Buy & Sell"),("Bikes","Buy & Sell"),
+("Clothing","Buy & Sell"),("Computers","Buy & Sell"),("Phones","Buy & Sell"),("Free Stuff","Buy & Sell");
+
+INSERT INTO sub_categories values("Cars & Trucks","Cars & Vehicles"),("Classic Cars","Cars & Vehicles"),
+("Vehicle Parts, Tires & Accessories","Cars & Vehicles"),("Automotive Services","Cars & Vehicles"),("Motorcycles","Cars & Vehicles");
+
+
+INSERT INTO sub_categories values("For Rent","Real Estate"),("For Sale","Real Estate");
+
+INSERT INTO sub_categories values("Accounting & Management","Jobs"),("Food & Hospitality","Jobs"),
+("Cleaning & Housekeeping","Jobs"),("Customer Service","Jobs"),("Construction & Trades","Jobs"),("Graphic & Web Design","Jobs");
+
+
+INSERT INTO sub_categories values("Childcare & Nanny","Services"),("Cleaners & Cleaning","Services"),
+("Entertainment","Services"),("Music Lessons","Services"),("Fitness & Personal Trainer","Services"),("Photography & Video","Services");  
+ 
+INSERT INTO sub_categories values("Animal & Pet Services","Pets"),("Cats & Kittens for Rehoming","Pets"),
+("Dogs & Puppies for Rehoming","Pets"),("Fish for Rehoming","Pets"),("Hourses & Ponies for Rehoming","Pets"),("Pets Accessories","Pets");
+

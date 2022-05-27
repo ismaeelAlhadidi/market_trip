@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: scroll;
+    font-size: 100%;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.TopBar {
+    border: none;
+    background-color:	#26414a;
+}
+
+.img {
+    height: 55px;
+    width: 100px;
+    float: left;
+    border: none;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.image{
+    border: solid white;
+
+}
+/*Search*/
+
+
+.registerdiv {
+    width: auto;
+    border: none;
+    float: right;
+}
+
+.Registerbtn , .Loginbtn{
+    font-size: 15px;
+    background-color:  #ece9e9;
+    color:	#2f4f4f;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 15px;
+    margin-right: 3px;
+    margin-left: 2px;
+}
+
+/*categories buttons */
+
+.categoriesBtnDiv {
+    border: none;
+    height: 40px;
+    width: 750px;
+    display: inline-block;
+    margin-left: 8px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    
+}
+
+.btns {
+    font-size: 15px;
+    background-color: #ece9e9;
+    color: 	#2f4f4f;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border: solid #f1f1f1;
+    padding: 8px;
+    margin:2px;
+}
+
+.btns:hover,
+.btns:focus {
+    background-color:	#bdb76b	;
+}
+.Registerbtn:hover,
+.Loginbtn:hover{
+    background-color:	#bdb76b
+}
+.listcontainer {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display:none;
+    box-shadow: 5px 8px 16px 0px #483d8b;
+    z-index: 1;
+    height: 20%;
+    width: 20%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: #2f4f4f;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 120px;
+    background-color: #fafafa;
+}
+.dropdown-content a:hover{
+    background-color:  #bdb76b;
+}
+
+.dropdown a:hover {
+    background-color:  #bdb76b;
+}
+
+.show {
+    display: block;
+}
+   
+    .settingImg {
+        border-radius: 50%;
+        font-size: 15px;
+        background-color:  #ece9e9;
+        color: 	#2f4f4f;
+        border: none;
+        cursor: pointer;
+        width: 50px;
+        height: 40px;
+        margin-top: 15px;
+        margin-right: 10px;
+        float: right;
+    }
+    
+    .SettingsList {
+        background-color:  #ece9e9;
+        width: 15px;
+        height: 10px;
+        border: 5px;
+        margin-top: 20px;
+        margin-right: 2px;
+        font-size: medium;
+        float: right;
+    }
+    .SettingsList:hover{
+        background-color: #bdb76b;
+    }
+     .section2{
+        height: 1000px;   
+        width: auto;
+        background-image: url(../images/wallpaper.jpeg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    } 
+    form{
+        padding: 100px;
+        background-color: #26414aa1;
+        border-radius: 15px;
+        width: 50%;
+        height: 50%;
+        margin: 250px;
+    }
+    h3{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        color: 	#8fbc8f;
+        margin: 30px;
+    }
+    
+   
+    .input-container {
+        display: flex;
+        width: 100%;
+        margin-bottom: 15px;
+        opacity: 0.9;
+        padding: 5px;
+      }
+      .input-container:hover{
+        opacity: .9;
+        background-color: #bdb76b4f;
+      }
+      
+      .icon {
+        padding: 10px;
+        background:	#26414a	;
+        color: white;
+        min-width: 50px;
+        text-align: center;
+        opacity: 0.9;
+      }
+      
+      .input-field {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+      }
+      
+      .input-field:focus {
+        border: 2px solid dodgerblue;
+      }
+      
+      /* Set a style for the submit button */
+      .btn {
+        background-color: #26414a	;
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+      
+      .btn:hover {
+        opacity: 1;
+        
+      }
+    
+    
